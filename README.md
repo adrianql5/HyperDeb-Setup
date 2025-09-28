@@ -204,6 +204,7 @@ Esta guía está pensada para personas sin experiencia previa en la instalación
 
 **¡Listo! Ahora tienes Debian 13 instalado y listo para personalizar. ¡Bienvenido a Linux!**
 
+<img width="1920" height="1201" alt="imagen" src="https://github.com/user-attachments/assets/cf071484-8080-459a-b4ab-dfc507274546" />
 
 
 ## Créditos

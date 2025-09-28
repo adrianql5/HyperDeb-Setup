@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "6ea08e57b0808347",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7d950e8c712c572",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db7dd8fc325c7531",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Guía detallada de instalación de Debian 13 desde cero.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Guía detallada de instalación de Debian 13 desde cero"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9209484a8541df8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d4ec66f56c280ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "047924537901e6e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "6da0c122e4e42889",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c49785656152e59a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "c1f5ec8fcd4943fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ffe4e9709478a1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe7069db316e596a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Guía detallada de instalación de Debian 13 desde cero.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Guía detallada de instalación de Debian 13 desde cero"
+            }
+          },
+          {
+            "id": "25bf86cb3adcc213",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Guía detallada de instalación de Debian 13 desde cero.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Guía detallada de instalación de Debian 13 desde cero"
+            }
+          },
+          {
+            "id": "9ac79232dc5894d6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "04a9524a9ec86e60",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Guía detallada de instalación de Debian 13 desde cero.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Guía detallada de instalación de Debian 13 desde cero"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "db7dd8fc325c7531",
+  "lastOpenFiles": [
+    "github.sh~",
+    "README.md",
+    "Imagenes/Pasted image 20250928174619.png",
+    "Imagenes/Pasted image 20250928174553.png",
+    "Imagenes/Pasted image 20250928174524.png",
+    "Imagenes/Pasted image 20250928174503.png",
+    "Imagenes/Pasted image 20250928174453.png",
+    "Imagenes/Pasted image 20250928174426.png",
+    "Imagenes/Pasted image 20250928174419.png",
+    "Imagenes/Pasted image 20250928174402.png",
+    "Imagenes/Pasted image 20250928174337.png",
+    "Imagenes/Pasted image 20250928174259.png",
+    "Imagenes",
+    "libreproject.sh",
+    "eduroam.sh",
+    "zshrc.sh",
+    "neovim.sh",
+    "intellij.sh",
+    "utilities.sh",
+    "github.sh",
+    "virtualbox.sh",
+    "docker.sh",
+    "Welcome.md",
+    "Guía detallada de instalación de Debian 13 desde cero.md"
+  ]
+}

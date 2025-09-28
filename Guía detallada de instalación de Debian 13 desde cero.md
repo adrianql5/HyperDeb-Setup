@@ -184,10 +184,10 @@ Esta guía está pensada para personas sin experiencia previa en la instalación
 
 4. Clona el repositorio y ejecuta el script principal:
    ```bash
-   git clone <URL-del-repositorio>
-   cd <nombre-del-repositorio>
-   chmod +x <script-principal.sh>
-   ./<script-principal.sh>
+   git clone https://github.com/adrianql5/HyperDeb-Setup.git
+   cd HyperDeb-Setup
+   chmod +x *.sh
+   ./setup.sh
    ```
    (Sigue los pasos del script para instalar Hyprland y otros programas que desees)
 

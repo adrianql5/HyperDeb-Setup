@@ -203,3 +203,9 @@ Esta guía está pensada para personas sin experiencia previa en la instalación
 ---
 
 **¡Listo! Ahora tienes Debian 13 instalado y listo para personalizar. ¡Bienvenido a Linux!**
+
+
+
+## Créditos
+
+Este proyecto utiliza o se inspira en [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) de [@JaKooLit](https://github.com/JaKooLit). ¡Gracias por compartir tu trabajo con la comunidad!

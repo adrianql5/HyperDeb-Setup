@@ -14,6 +14,7 @@ SCRIPTS=(
   "zshrc.sh:Configura tus alias en .zshrc"
   "eduroam.sh:Instala y configura Eduroam (WiFi universitario)"
   "libreproject.sh:Instala LibreProject"
+  "spotify.sh:Intala Spotify"
 )
 
 for entry in "${SCRIPTS[@]}"; do

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ruta base donde buscar repositorios
-BASE_DIR="$HOME" # Puedes cambiar esta ruta por otra si lo prefieres
+BASE_DIR="$HOME/Escritorio/" # Puedes cambiar esta ruta por otra si lo prefieres
 
 # Encuentra todos los directorios con .git
 find "$BASE_DIR" -type d -name ".git" | while read gitdir; do

@@ -54,7 +54,7 @@ if [[ "$RESPUESTA" == "s" || "$RESPUESTA" == "S" ]]; then
   echo "Esto es ideal para tareas de mantenimiento, copias de seguridad, actualizaciones automáticas, etc."
   echo ""
   echo "Para que la sincronización se ejecute automáticamente cada 30 minutos, añade esta línea a tu crontab:"
-  echo "  */30 * * * * ~/DirectorioDeScript/actualiza_todos_git.sh"
+  echo "*/5 * * * * /home/adrianql5/Escritorio/HyperDeb-Setup/actualiza_todos_git.sh"
   echo ""
   echo "¿Cómo hacerlo?"
   echo "1. Abre la configuración de crontab con el siguiente comando:"

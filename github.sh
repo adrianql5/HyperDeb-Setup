@@ -41,3 +41,29 @@ mkdir -p ~/Escritorio/TALF
 mkdir -p ~/Escritorio/ENSO
 
 echo "Repositorios y carpetas de GitHub creados correctamente."
+
+echo ""
+read -p "¿Quieres que todos tus repositorios se sincronicen automáticamente con GitHub? (s/n): " RESPUESTA
+
+if [[ "$RESPUESTA" == "s" || "$RESPUESTA" == "S" ]]; then
+  echo "Ahora vas a programar la sincronización automática usando crontab."
+  echo ""
+  echo "¿Qué es crontab?"
+  echo "Crontab es una herramienta de Linux que permite programar la ejecución automática de comandos y scripts en intervalos regulares de tiempo."
+  echo "Cada usuario puede tener su propio archivo crontab, donde define qué tareas quiere que se ejecuten y cuándo."
+  echo "Esto es ideal para tareas de mantenimiento, copias de seguridad, actualizaciones automáticas, etc."
+  echo ""
+  echo "Para que la sincronización se ejecute automáticamente cada 30 minutos, añade esta línea a tu crontab:"
+  echo "  */30 * * * * ~/DirectorioDeScript/actualiza_todos_git.sh"
+  echo ""
+  echo "¿Cómo hacerlo?"
+  echo "1. Abre la configuración de crontab con el siguiente comando:"
+  echo "   crontab -e"
+  echo "2. Se abrirá un editor de texto. Ve al final del archivo y pega la línea anterior."
+  echo "3. Guarda y cierra el editor. ¡Listo!"
+  echo ""
+  echo "A partir de ahora, todos tus repositorios se actualizaran automáticamente en GitHub cada media hora."
+  echo "En caso de que no quieras "
+else
+  echo "No se configurará la sincronización automática con GitHub."
+fi

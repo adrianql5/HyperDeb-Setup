@@ -14,6 +14,7 @@ sudo apt install -y \
   libgl1-mesa-dev \
   python3 \
   python3-pip \
-  r-base
+  r-base \
+  zathura
 
 echo "Instalación de utilidades completada."

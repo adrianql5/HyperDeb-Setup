@@ -45,9 +45,9 @@ echo "Guarda con Ctrl+O, Enter y sal con Ctrl+X."
 echo ""
 read -p "Cuando hayas leído esto pulsa Enter para continuar ..."
 
-nano ~/.local/share/applications/intellij-idea.desktop
+sudo nano ~/.local/share/applications/intellij-idea.desktop
 
 echo "Dando permisos de ejecución al acceso directo..."
-chmod +x ~/.local/share/applications/intellij-idea.desktop
+sudo chmod +x ~/.local/share/applications/intellij-idea.desktop
 
 echo "Instalación de IntelliJ IDEA completada."

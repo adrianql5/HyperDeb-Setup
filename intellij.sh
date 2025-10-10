@@ -15,7 +15,7 @@ echo "Extrayendo el archivo ideaIU-2025.2.2.tar.gz..."
 tar -xzf ideaIU-2025.2.3.tar.gz
 
 echo "Accede a la carpeta extraída y luego a 'bin' para el siguiente paso:"
-cd idea-IU-252.26199.169/bin
+cd idea-IU-252.26830.84/bin
 
 echo "Ahora se abrirá el editor nano para crear el acceso directo de IntelliJ IDEA."
 echo "Copia y pega el siguiente contenido en el archivo (puedes editar la ruta si cambia la versión):"

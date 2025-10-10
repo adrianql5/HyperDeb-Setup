@@ -4,6 +4,7 @@ echo "-------------------------------------------------------------"
 echo "Descarga manual requerida:"
 echo "Ve a la página oficial de IntelliJ IDEA y descarga la versión para Linux (.tar.gz):"
 echo "    https://www.jetbrains.com/es-es/idea/download/?section=linux"
+echo "Tened cuidado con la versión de IntelliJ que instalais, porque los datos de la versión pueden no coincidir, si pasa eso mirad el nombre de las carpetas de este script y de las que habeis modificado y cambiadlas para que sean iguales."
 echo "Guárdala en tu carpeta de Descargas."
 echo "-------------------------------------------------------------"
 
@@ -25,14 +26,16 @@ Version=1.0
 Type=Application
 Name=IntelliJ IDEA
 Comment=IntelliJ IDEA IDE
-Exec=/opt/idea-IU-252.26199.169/bin/idea.sh
-Icon=/opt/idea-IU-252.26199.169/bin/idea.png
+Exec=/opt/idea-IU-252.26830.84/bin/idea.sh
+Icon=/opt/idea-IU-252.26830.84/bin/idea.png
 Terminal=false
 Categories=Development;IDE;
 StartupWMClass=jetbrains-idea"
 echo ""
 echo "Guarda con Ctrl+O, Enter y sal con Ctrl+X."
 echo ""
+read -p "Cuando hayas leido esto pulsa Enter para continuar ..."
+
 sudo nano ~/.local/share/applications/intellij-idea.desktop
 
 echo "Dando permisos de ejecución al acceso directo..."

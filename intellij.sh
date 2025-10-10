@@ -12,7 +12,7 @@ read -p "Cuando hayas descargado el archivo tar.gz, pulsa Enter para continuar..
 cd ~/Descargas
 
 echo "Extrayendo el archivo ideaIU-2025.2.2.tar.gz..."
-tar -xzf ideaIU-2025.2.2.tar.gz
+tar -xzf ideaIU-2025.2.3.tar.gz
 
 echo "Accede a la carpeta extraída y luego a 'bin' para el siguiente paso:"
 cd idea-IU-252.26199.169/bin

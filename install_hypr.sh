@@ -8,7 +8,7 @@ sudo apt install -y hyprland git network-manager-gnome network-manager firefox
 
 echo "Clonando el repositorio de configuración de Hyprland..."
 git clone https://github.com/JaKooLit/Debian-Hyprland.git
-cd Debian-Hyprland
+cd ~/Debian-Hyprland
 
 echo "Al ejecutar el instalador, marca todas las opciones excepto 'rog' y 'pokemon'."
 read -p "Pulsa Enter para continuar..."

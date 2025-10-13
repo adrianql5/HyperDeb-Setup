@@ -2,8 +2,8 @@
 
 echo "-------------------------------------------------------------"
 echo "Descarga manual requerida:"
-echo "Ve a la página oficial de IntelliJ IDEA y descarga la versión para Linux (.tar.gz):"
-echo "    https://www.jetbrains.com/es-es/idea/download/?section=linux"
+echo "Ve a la página oficial de PyCharm y descarga la versión para Linux (.tar.gz):"
+echo "    https://www.jetbrains.com/pycharm/download/?section=linux"
 echo "Guárdala en tu carpeta de Descargas."
 echo "-------------------------------------------------------------"
 echo ""
@@ -14,11 +14,11 @@ read -p "Cuando hayas descargado el archivo tar.gz, pulsa Enter para continuar..
 
 cd ~/Descargas
 
-# Buscar archivos .tar.gz de IntelliJ en Descargas
+# Buscar archivos .tar.gz de PyCharm en Descargas
 echo "Buscando archivos .tar.gz en Descargas..."
-TAR_FILES=($(find . -maxdepth 1 -type f -name 'idea*.tar.gz'))
+TAR_FILES=($(find . -maxdepth 1 -type f -name 'pycharm*.tar.gz'))
 if [[ ${#TAR_FILES[@]} -eq 0 ]]; then
-  echo "No se encontraron archivos idea*.tar.gz en Descargas. Por favor, descarga el archivo y vuelve a ejecutar el script."
+  echo "No se encontraron archivos pycharm*.tar.gz en Descargas. Por favor, descarga el archivo y vuelve a ejecutar el script."
   exit 1
 fi
 
@@ -37,8 +37,8 @@ fi
 echo "Extrayendo el archivo $TAR_FILE..."
 tar -xzf "$TAR_FILE"
 
-# Buscar carpetas extraídas que empiezan por idea
-EXTRACTED_FOLDERS=($(find . -maxdepth 1 -type d -name 'idea*'))
+# Buscar carpetas extraídas que empiezan por pycharm
+EXTRACTED_FOLDERS=($(find . -maxdepth 1 -type d -name 'pycharm*'))
 echo "Carpetas extraídas encontradas:"
 for i in "${!EXTRACTED_FOLDERS[@]}"; do
   echo "$((i + 1)). ${EXTRACTED_FOLDERS[$i]}"
@@ -51,33 +51,33 @@ else
   EXTRACTED_FOLDER="${EXTRACTED_FOLDERS[0]}"
 fi
 
-echo "Moviendo IntelliJ IDEA a /opt/$EXTRACTED_FOLDER ..."
+echo "Moviendo PyCharm a /opt/$EXTRACTED_FOLDER ..."
 sudo mv "$EXTRACTED_FOLDER" /opt/
 
 echo "Accediendo a la carpeta /opt/$EXTRACTED_FOLDER/bin ..."
 cd /opt/"$EXTRACTED_FOLDER"/bin
 
-echo "Ahora se abrirá el editor nano para crear el acceso directo de IntelliJ IDEA."
+echo "Ahora se abrirá el editor nano para crear el acceso directo de PyCharm."
 echo "Copia y pega el siguiente contenido en el archivo (puedes editar la ruta si cambia la versión):"
 echo ""
 echo "[Desktop Entry]
 Version=1.0
 Type=Application
-Name=IntelliJ IDEA
-Comment=IntelliJ IDEA IDE
-Exec=/opt/$EXTRACTED_FOLDER/bin/idea.sh
-Icon=/opt/$EXTRACTED_FOLDER/bin/idea.png
+Name=PyCharm
+Comment=PyCharm IDE
+Exec=/opt/$EXTRACTED_FOLDER/bin/pycharm.sh
+Icon=/opt/$EXTRACTED_FOLDER/bin/pycharm.png
 Terminal=false
 Categories=Development;IDE;
-StartupWMClass=jetbrains-idea"
+StartupWMClass=jetbrains-pycharm"
 echo ""
 echo "Guarda con Ctrl+O, Enter y sal con Ctrl+X."
 echo ""
 read -p "Cuando hayas leído esto pulsa Enter para continuar ..."
 
-sudo nano ~/.local/share/applications/intellij-idea.desktop
+sudo nano ~/.local/share/applications/pycharm.desktop
 
 echo "Dando permisos de ejecución al acceso directo..."
-sudo chmod +x ~/.local/share/applications/intellij-idea.desktop
+sudo chmod +x ~/.local/share/applications/pycharm.desktop
 
-echo "Instalación de IntelliJ IDEA completada."
+echo "Instalación de PyCharm completada."

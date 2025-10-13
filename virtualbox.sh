@@ -2,8 +2,6 @@
 
 echo "----------------------------------------------------------"
 echo "Antes de continuar, por favor accede a OneDrive y descarga tus máquinas virtuales:"
-echo "  - cliente1.ova"
-echo "  - servidor.ova"
 echo "Guárdalas en tu carpeta de Descargas."
 echo "----------------------------------------------------------"
 

@@ -4,17 +4,16 @@ SCRIPTS=(
   "sources.sh:Configura /etc/apt/sources.list con los repos necesarios"
   "install_hypr.sh:Instala Hyprland y apps básicas"
   "network.sh:Configura el Network Manager"
-  "obsidian.sh:Instala Obsidian (requiere descarga manual)"
   "docker.sh:Instala Docker y entorno de prácticas"
   "virtualbox.sh:Instala VirtualBox y mueve las máquinas virtuales"
   "github.sh:Clona tus repositorios de GitHub"
   "utilities.sh:Instala utilidades para desarrollo"
-  "intellij.sh:Instala IntelliJ IDEA (requiere descarga manual)"
-  "neovim.sh:Instala Neovim y LazyVim (requiere descarga manual)"
   "zshrc.sh:Configura tus alias en .zshrc"
-  "eduroam.sh:Instala y configura Eduroam (WiFi universitario)"
+  "eduroam.sh:Instala y configura Eduroam"
   "libreproject.sh:Instala LibreProject"
   "spotify.sh:Intala Spotify"
+  "jflap.sh:Instala jflap"
+  "ides.sh:Instala IDEs de JetBrains, VSCode, Neovim y Obsidian"
 )
 
 for entry in "${SCRIPTS[@]}"; do

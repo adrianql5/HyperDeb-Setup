@@ -14,9 +14,8 @@ alias enso='cd ~/Escritorio/ENSO'
 alias talf='cd ~/Escritorio/TALF'
 
 # Alias para abrir apps
-alias projectlibre='java -jar ~/Escritorio/ENSO/projectlibre-1.9.8.jar'
-alias jflap='java -jar ~/Escritorio/TALF/JFLAP.jar'
 alias open='zathura'
+
 EOF
 
 echo "Recargando configuración de zsh..."

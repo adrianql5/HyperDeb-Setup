@@ -2,8 +2,8 @@
 
 echo "-------------------------------------------------------------"
 echo "Descarga manual requerida:"
-echo "Ve a la página oficial de IntelliJ IDEA y descarga la versión para Linux (.tar.gz):"
-echo "    https://www.jetbrains.com/es-es/idea/download/?section=linux"
+echo "Ve a la página oficial de CLion y descarga la versión para Linux (.tar.gz):"
+echo "    https://www.jetbrains.com/clion/download/?section=linux"
 echo "Guárdala en tu carpeta de Descargas."
 echo "-------------------------------------------------------------"
 echo ""
@@ -14,11 +14,11 @@ read -p "Cuando hayas descargado el archivo tar.gz, pulsa Enter para continuar..
 
 cd ~/Descargas
 
-# Buscar archivos .tar.gz de IntelliJ en Descargas
+# Buscar archivos .tar.gz de CLion en Descargas
 echo "Buscando archivos .tar.gz en Descargas..."
-TAR_FILES=($(find . -maxdepth 1 -type f -name 'idea*.tar.gz'))
+TAR_FILES=($(find . -maxdepth 1 -type f -name 'CLion*.tar.gz'))
 if [[ ${#TAR_FILES[@]} -eq 0 ]]; then
-  echo "No se encontraron archivos idea*.tar.gz en Descargas. Por favor, descarga el archivo y vuelve a ejecutar el script."
+  echo "No se encontraron archivos clion*.tar.gz en Descargas. Por favor, descarga el archivo y vuelve a ejecutar el script."
   exit 1
 fi
 
@@ -37,8 +37,8 @@ fi
 echo "Extrayendo el archivo $TAR_FILE..."
 tar -xzf "$TAR_FILE"
 
-# Buscar carpetas extraídas que empiezan por idea
-EXTRACTED_FOLDERS=($(find . -maxdepth 1 -type d -name 'idea*'))
+# Buscar carpetas extraídas que empiezan por clion
+EXTRACTED_FOLDERS=($(find . -maxdepth 1 -type d -name 'clion*'))
 echo "Carpetas extraídas encontradas:"
 for i in "${!EXTRACTED_FOLDERS[@]}"; do
   echo "$((i + 1)). ${EXTRACTED_FOLDERS[$i]}"
@@ -51,33 +51,33 @@ else
   EXTRACTED_FOLDER="${EXTRACTED_FOLDERS[0]}"
 fi
 
-echo "Moviendo IntelliJ IDEA a /opt/$EXTRACTED_FOLDER ..."
+echo "Moviendo CLion a /opt/$EXTRACTED_FOLDER ..."
 sudo mv "$EXTRACTED_FOLDER" /opt/
 
 echo "Accediendo a la carpeta /opt/$EXTRACTED_FOLDER/bin ..."
 cd /opt/"$EXTRACTED_FOLDER"/bin
 
-echo "Ahora se abrirá el editor nano para crear el acceso directo de IntelliJ IDEA."
+echo "Ahora se abrirá el editor nano para crear el acceso directo de CLion."
 echo "Copia y pega el siguiente contenido en el archivo (puedes editar la ruta si cambia la versión):"
 echo ""
 echo "[Desktop Entry]
 Version=1.0
 Type=Application
-Name=IntelliJ IDEA
-Comment=IntelliJ IDEA IDE
-Exec=/opt/$EXTRACTED_FOLDER/bin/idea.sh
-Icon=/opt/$EXTRACTED_FOLDER/bin/idea.png
+Name=CLion
+Comment=CLion IDE
+Exec=/opt/$EXTRACTED_FOLDER/bin/clion.sh
+Icon=/opt/$EXTRACTED_FOLDER/bin/clion.png
 Terminal=false
 Categories=Development;IDE;
-StartupWMClass=jetbrains-idea"
+StartupWMClass=jetbrains-clion"
 echo ""
 echo "Guarda con Ctrl+O, Enter y sal con Ctrl+X."
 echo ""
 read -p "Cuando hayas leído esto pulsa Enter para continuar ..."
 
-sudo nano ~/.local/share/applications/intellij-idea.desktop
+sudo nano ~/.local/share/applications/clion.desktop
 
 echo "Dando permisos de ejecución al acceso directo..."
-sudo chmod +x ~/.local/share/applications/intellij-idea.desktop
+sudo chmod +x ~/.local/share/applications/clion.desktop
 
-echo "Instalación de IntelliJ IDEA completada."
+echo "Instalación de CLion completada."

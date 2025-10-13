@@ -2,10 +2,8 @@
 
 echo "-------------------------------------------------------------"
 echo "Descarga manual requerida:"
-echo "Ve a la página oficial de ProjectLibre y descarga el archivo JAR:"
-echo "    https://sourceforge.net/projects/projectlibre/"
-echo "El archivo debe llamarse: projectlibre-1.9.8.jar"
-echo "Guárdalo en tu carpeta de Descargas."
+echo "El archivo JFLAP7.1.jar se encuentra disponible en el campus virtual de la asignatura TALF."
+echo "Accede al campus, descarga el archivo JFLAP7.1.jar y guárdalo en tu carpeta de Descargas."
 echo "-------------------------------------------------------------"
 
 read -p "Cuando hayas descargado el archivo, pulsa Enter para continuar..."
@@ -14,8 +12,8 @@ read -p "Cuando hayas descargado el archivo, pulsa Enter para continuar..."
 USER_HOME="$HOME"
 DESCARGAS="$USER_HOME/Descargas"
 ESCRITORIO="$USER_HOME/Escritorio"
-ENSO="$ESCRITORIO/ENSO"
-JAR="$DESCARGAS/projectlibre-1.9.8.jar"
+TALF="$ESCRITORIO/TALF"
+JAR="$DESCARGAS/JFLAP7.1.jar"
 
 # Verificar carpeta Descargas y archivo JAR
 if [[ ! -d "$DESCARGAS" ]]; then
@@ -25,11 +23,12 @@ fi
 
 if [[ ! -f "$JAR" ]]; then
   # Buscar otro archivo similar en Descargas
-  echo "No se encontró projectlibre-1.9.8.jar en Descargas."
-  OPCION=$(ls "$DESCARGAS"/projectlibre-*.jar 2>/dev/null | head -n 1)
+  echo "No se encontró JFLAP7.1.jar en Descargas."
+  # Buscar otro archivo JAR en Descargas (evitando archivos .sh)
+  OPCION=$(find "$DESCARGAS" -maxdepth 1 -type f -name 'JFLAP*.jar' ! -name '*.sh' | head -n 1)
   if [[ -n "$OPCION" ]]; then
     echo "Se ha encontrado otro archivo JAR: $(basename "$OPCION")"
-    read -p "¿Quieres usar este archivo en vez de projectlibre-1.9.8.jar? (s/n): " RESP
+    read -p "¿Quieres usar este archivo en vez de JFLAP7.1.jar? (s/n): " RESP
     if [[ "$RESP" == "s" ]]; then
       JAR="$OPCION"
     else
@@ -37,35 +36,35 @@ if [[ ! -f "$JAR" ]]; then
       exit 1
     fi
   else
-    echo "No se encontró ningún archivo JAR de ProjectLibre en Descargas. Descárgalo antes de ejecutar este script."
+    echo "No se encontró ningún archivo JAR de JFLAP en Descargas. Descárgalo antes de ejecutar este script."
     exit 1
   fi
 fi
 
-# Crear la carpeta ENSO en el Escritorio si no existe
+# Crear la carpeta TALF en el Escritorio si no existe
 if [[ ! -d "$ESCRITORIO" ]]; then
   echo "La carpeta Escritorio no existe en tu usuario ($ESCRITORIO). Por favor, créala manualmente."
   exit 1
 fi
 
-mkdir -p "$ENSO"
+mkdir -p "$TALF"
 
-# Mover el archivo JAR al Escritorio/ENSO
-mv "$JAR" "$ENSO/"
-JAR_FINAL="$ENSO/$(basename "$JAR")"
-echo "Archivo JAR movido a $ENSO/"
+# Mover el archivo JAR al Escritorio/TALF
+mv "$JAR" "$TALF/"
+JAR_FINAL="$TALF/$(basename "$JAR")"
+echo "Archivo JAR movido a $TALF/"
 
 # Añadir alias a .zshrc
-echo "Añadiendo alias 'projectlibre' a ~/.zshrc ..."
-if grep -q "alias projectlibre=" "$USER_HOME/.zshrc"; then
+echo "Añadiendo alias 'jflap' a ~/.zshrc ..."
+if grep -q "alias jflap=" "$USER_HOME/.zshrc"; then
   # Reemplazar alias existente
-  sed -i.bak '/alias projectlibre=.*/d' "$USER_HOME/.zshrc"
+  sed -i.bak '/alias jflap=.*/d' "$USER_HOME/.zshrc"
 fi
 cat <<EOF >>"$USER_HOME/.zshrc"
 
-# Alias para ejecutar ProjectLibre fácilmente
-alias projectlibre='java -jar $JAR_FINAL'
+# Alias para ejecutar JFLAP fácilmente
+alias jflap='java -jar $JAR_FINAL'
 EOF
 
 echo "Recarga la configuración de zsh ejecutando: source ~/.zshrc"
-echo "Alias añadido y ProjectLibre listo para usarse con el comando 'projectlibre'."
+echo "Alias añadido y JFLAP listo para usarse con el comando 'jflap'."

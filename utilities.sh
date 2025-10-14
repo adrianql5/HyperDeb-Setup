@@ -15,6 +15,14 @@ sudo apt install -y \
   python3 \
   python3-pip \
   r-base \
-  zathura
+  zathura \
+  wine \
+  alien \
+  apt-file \
+  psmisc \
+  strace \
+  dump \
+  at \
+  bsdmainutils
 
 echo "Instalación de utilidades completada."

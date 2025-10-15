@@ -14,6 +14,7 @@ SCRIPTS=(
   "spotify.sh:Intala Spotify"
   "jflap.sh:Instala jflap"
   "ides.sh:Instala IDEs de JetBrains, VSCode, Neovim y Obsidian"
+  "customKeybinds.sh:Modifica los atajos de teclado para spotify"
 )
 
 for entry in "${SCRIPTS[@]}"; do

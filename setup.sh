@@ -15,6 +15,7 @@ SCRIPTS=(
   "jflap.sh:Instala jflap"
   "ides.sh:Instala IDEs de JetBrains, VSCode, Neovim y Obsidian"
   "customKeybinds.sh:Modifica los atajos de teclado para spotify"
+  "ollama.sh:Instala un modelo de IA en local"
 )
 
 for entry in "${SCRIPTS[@]}"; do

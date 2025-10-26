@@ -11,7 +11,7 @@ Esta guía está pensada para personas sin experiencia previa en la instalación
 5. Instalación de Debian 13 paso a paso
 6. Conceptos clave: superusuario, contraseñas y particionado
 7. Primeros pasos tras la instalación
-8. Recomendaciones de seguridad
+8. Recomendaciones de seguridad: Bitwarden
 
 ---
 

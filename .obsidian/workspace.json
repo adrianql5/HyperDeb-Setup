@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c1f5ec8fcd4943fc",
@@ -171,6 +172,8 @@
   },
   "active": "db7dd8fc325c7531",
   "lastOpenFiles": [
+    "Imagenes/Pasted image 20251026222744.png",
+    "Imagenes/Pasted image 20251026222418.png",
     "Imagenes/Pasted image 20250928180732.png",
     "README.md",
     "Imagenes/Pasted image 20250928180719.png",
@@ -183,8 +186,6 @@
     "Imagenes/Pasted image 20250928174619.png",
     "Imagenes/Pasted image 20250928174553.png",
     "Imagenes/Pasted image 20250928174524.png",
-    "Imagenes/Pasted image 20250928174503.png",
-    "Imagenes/Pasted image 20250928174453.png",
     "Imagenes",
     "libreproject.sh",
     "eduroam.sh",

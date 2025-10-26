@@ -1,6 +1,8 @@
 
 Esta guía está pensada para personas sin experiencia previa en la instalación de sistemas Linux. Te explico paso a paso cómo instalar Debian 13 en tu ordenador, usando Ventoy para crear un USB booteable y configurando la BIOS correctamente.
 
+![[Pasted image 20251026222418.png]]
+![[Pasted image 20251026222744.png]]
 ## Índice
 1. ¿Qué es Ventoy?
 2. Descarga de ISO de Debian 13
@@ -9,6 +11,7 @@ Esta guía está pensada para personas sin experiencia previa en la instalación
 5. Instalación de Debian 13 paso a paso
 6. Conceptos clave: superusuario, contraseñas y particionado
 7. Primeros pasos tras la instalación
+8. Recomendaciones de seguridad
 
 ---
 
@@ -196,6 +199,10 @@ Esta guía está pensada para personas sin experiencia previa en la instalación
 **¡Listo! Ahora tienes Debian 13 instalado y listo para personalizar. ¡Bienvenido a Linux!**
 
 ![[Pasted image 20250928180732.png]]
+
+## 8. Recomendaciones de seguridad
+
+
 ## Créditos
 
 Este proyecto utiliza o se inspira en [Debian-Hyprland](https://github.com/JaKooLit/Debian-Hyprland) de [@JaKooLit](https://github.com/JaKooLit). ¡Gracias por compartir tu trabajo con la comunidad!

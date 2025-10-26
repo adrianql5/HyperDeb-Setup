@@ -200,8 +200,39 @@ Esta guía está pensada para personas sin experiencia previa en la instalación
 
 ![[Pasted image 20250928180732.png]]
 
-## 8. Recomendaciones de seguridad
+## 8. Recomendaciones de seguridad: Bitwarden
 
+Escribo este apartado porque tengo la sensación de que no soy el único que tiene una maraña de contraseñas entremezcladas muy similares. El problema de esto es que si te roban una contraseña, te roban todas, no creo que sea conveniente por ello recomiendo el uso de Bitwarden.
+
+![[Pasted image 20251026225014.png]]
+
+Bitwarden es un gestor de contraseñas gratuito y de código abierto que cifra de extremo a extremo todos tus datos (modelo “zero‑knowledge”: tu clave maestra nunca sale de tus dispositivos).
+
+Te permite crear y guardar contraseñas únicas y fuertes para cada servicio, autocompletar en el navegador, sincronizar entre dispositivos y, si quieres, almacenar códigos TOTP (2FA) para inicio de sesión en dos pasos. Se puede utilizar en cualquier dispositivo y navegador.
+
+Página donde descargarlo: https://bitwarden.com/download/
+
+1. Crea cuenta y elige una clave maestra sólida.
+2. Activa 2FA para tu cuenta de Bitwarden:
+- En Ajustes de tu cuenta, habilita 2FA con TOTP (Google Authenticator, Aegis) o, mejor, con llave de seguridad (FIDO2/U2F).
+- Guarda los códigos de recuperación en un lugar seguro.
+
+1. Configura la aplicación:
+- Establece “Bloqueo automático” y “Bloquear al suspender” para que la bóveda se cierre si te ausentas.
+- Activa “Limpiar portapapeles” a los 10–30 segundos para que las contraseñas copiadas no queden expuestas.
+
+1. Empieza a guardar accesos:
+- Crea un elemento por cada servicio (usuario, contraseña, URL). Bitwarden te sugerirá guardarlos al iniciar sesión en webs.
+- Usa el generador de contraseñas: longitud 16–24, con símbolos; para máx. comodidad usa “frases de paso” (4–6 palabras) donde sea admitido.
+
+5. Autocompletado:
+
+- Inicia sesión en la extensión del navegador con tu cuenta de Bitwarden.
+- Abre una web y usa el icono de la extensión o el atajo estándar (Ctrl+Shift+L) para autocompletar.
+
+1. Importar contraseñas existentes (opcional):
+- Desde el escritorio o la web de Bitwarden, ve a Importar y trae tus contraseñas desde CSV de tu navegador o de otro gestor.
+- Borra luego los almacenes antiguos para no dejarlos duplicados.
 
 ## Créditos
 

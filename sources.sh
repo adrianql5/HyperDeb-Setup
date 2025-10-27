@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) 2025 Adrián Quiroga Linares Lectura y referencia permitidas; reutilización y plagio prohibidos
+
 
 echo "Este script va a sobrescribir /etc/apt/sources.list con los repositorios recomendados para Debian Trixie."
 echo "¿Quieres continuar? (s/n)"

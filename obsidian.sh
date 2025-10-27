@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) 2025 Adrián Quiroga Linares Lectura y referencia permitidas; reutilización y plagio prohibidos
+
 
 echo "---------------------------------------------"
 echo "Por favor, ve a la página web de Obsidian y descárgate el archivo .deb para Linux:"

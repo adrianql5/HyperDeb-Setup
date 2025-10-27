@@ -1,4 +1,6 @@
 #!/bin/bash
+# Copyright (c) 2025 Adrián Quiroga Linares Lectura y referencia permitidas; reutilización y plagio prohibidos
+
 # Ruta base donde buscar repositorios
 BASE_DIR="$HOME/Escritorio/" # Puedes cambiar esta ruta por otra si lo prefieres
 

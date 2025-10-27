@@ -1,3 +1,5 @@
+<!-- Copyright (c) 2025 Adrián Quiroga Linares Lectura y referencia permitidas; reutilización y plagio prohibidos -->
+
 
 Esta guía está pensada para personas sin experiencia previa en la instalación de sistemas Linux. Te explico paso a paso cómo instalar Debian 13 en tu ordenador, usando Ventoy para crear un USB booteable y configurando la BIOS correctamente.
 

@@ -1,7 +1,6 @@
 #!/bin/bash
 # Copyright (c) 2025 Adrián Quiroga Linares Lectura y referencia permitidas; reutilización y plagio prohibidos
 
-
 echo "Añadiendo alias personalizados al archivo ~/.zshrc..."
 
 cat <<EOF >>~/.zshrc
@@ -9,18 +8,11 @@ cat <<EOF >>~/.zshrc
 # Alias personalizados para accesos rápidos
 alias desk='cd ~/Escritorio'
 alias downs='cd ~/Descargas'
-alias comdis='cd ~/Escritorio/COMDIS'
-alias asr='cd ~/Escritorio/ASR'
-alias ia='cd ~/Escritorio/IA'
-alias enso='cd ~/Escritorio/ENSO'
-alias talf='cd ~/Escritorio/TALF'
+alias pp='cd ~/ProyectosPersonales/'
 
 # Alias para abrir apps
 alias open='zathura'
 
 EOF
 
-echo "Recargando configuración de zsh..."
-source ~/.zshrc
-
-echo "Alias añadidos y configuración recargada."
+echo "Ejecuta source ~/.zshrc"

@@ -1,7 +1,6 @@
 #!/bin/bash
 # Copyright (c) 2025 Adrián Quiroga Linares Lectura y referencia permitidas; reutilización y plagio prohibidos
 
-
 echo "-------------------------------------------------------------"
 echo "Descarga manual requerida:"
 echo "El archivo JFLAP7.1.jar se encuentra disponible en el campus virtual de la asignatura TALF."
@@ -14,8 +13,8 @@ read -p "Cuando hayas descargado el archivo, pulsa Enter para continuar..."
 USER_HOME="$HOME"
 DESCARGAS="$USER_HOME/Descargas"
 ESCRITORIO="$USER_HOME/Escritorio"
-TALF="$ESCRITORIO/TALF"
-JAR="$DESCARGAS/JFLAP7.1.jar"
+TALF="$ESCRITORIO/3-PRACTICA-1-CUATRI/TALF"
+JAR="$DESCARGAS/JFLAP.jar"
 
 # Verificar carpeta Descargas y archivo JAR
 if [[ ! -d "$DESCARGAS" ]]; then
@@ -23,25 +22,25 @@ if [[ ! -d "$DESCARGAS" ]]; then
   exit 1
 fi
 
-if [[ ! -f "$JAR" ]]; then
-  # Buscar otro archivo similar en Descargas
-  echo "No se encontró JFLAP7.1.jar en Descargas."
-  # Buscar otro archivo JAR en Descargas (evitando archivos .sh)
-  OPCION=$(find "$DESCARGAS" -maxdepth 1 -type f -name 'JFLAP*.jar' ! -name '*.sh' | head -n 1)
-  if [[ -n "$OPCION" ]]; then
-    echo "Se ha encontrado otro archivo JAR: $(basename "$OPCION")"
-    read -p "¿Quieres usar este archivo en vez de JFLAP7.1.jar? (s/n): " RESP
-    if [[ "$RESP" == "s" ]]; then
-      JAR="$OPCION"
-    else
-      echo "Por favor, descarga el archivo correcto y vuelve a ejecutar el script."
-      exit 1
-    fi
-  else
-    echo "No se encontró ningún archivo JAR de JFLAP en Descargas. Descárgalo antes de ejecutar este script."
-    exit 1
-  fi
-fi
+#if [[ ! -f "$JAR" ]]; then
+# Buscar otro archivo similar en Descargas
+# echo "No se encontró JFLAP7.1.jar en Descargas."
+# Buscar otro archivo JAR en Descargas (evitando archivos .sh)
+#OPCION=$(find "$DESCARGAS" -maxdepth 1 -type f -name 'JFLAP*.jar' ! -name '*.sh' | head -n 1)
+#if [[ -n "$OPCION" ]]; then
+# echo "Se ha encontrado otro archivo JAR: $(basename "$OPCION")"
+#read -p "¿Quieres usar este archivo en vez de JFLAP7.1.jar? (s/n): " RESP
+#if [[ "$RESP" == "s" ]]; then
+# JAR="$OPCION"
+#  else
+#   echo "Por favor, descarga el archivo correcto y vuelve a ejecutar el script."
+#  exit 1
+#   fi
+#else
+# echo "No se encontró ningún archivo JAR de JFLAP en Descargas. Descárgalo antes de ejecutar este script."
+#exit 1
+# fi
+#fi
 
 # Crear la carpeta TALF en el Escritorio si no existe
 if [[ ! -d "$ESCRITORIO" ]]; then
